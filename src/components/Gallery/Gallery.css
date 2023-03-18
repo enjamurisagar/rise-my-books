@@ -1,0 +1,48 @@
+.gallery-main {
+  display: none;
+  margin-left: 150px;
+  padding-top: 8rem;
+  position: absolute;
+  top: -35px;
+  height: 100vh;
+  width: 100%;
+}
+.gallery-active {
+  display: block;
+}
+/* .gallery-main {
+  display: none;
+  max-width: 90%;
+  margin-left: 10%;
+  height: 100%;
+  padding-top: 8%;
+}
+.gallery-active {
+  display: block;
+} */
+
+/*** RESPONSIVE FOR LAPTOPS ***/
+
+/***FOR LARGE DEVICE ****/
+@media screen and (max-width: 972px) {
+  .gallery-main {
+    padding-top: 26%;
+    margin: auto;
+  }
+}
+/*** FOR MEDIUM DEVICES ***/
+@media screen and (max-width: 768px) {
+  .gallery-main {
+    padding-top: 38%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .gallery-main {
+    padding-top: 55%;
+  }
+}
+
+/*** FOR SMALL DEVICES ***/
+@media screen and (max-width: 350px) {
+}

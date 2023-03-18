@@ -1,0 +1,391 @@
+.header-main {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  position: fixed;
+  background: linear-gradient(
+    90deg,
+    hsla(298, 68%, 90%, 1) 0%,
+    hsla(30, 82%, 91%, 1) 100%
+  );
+  z-index: 9999;
+  border-bottom: 2px solid #000;
+}
+.header-left {
+  flex: 1;
+  margin: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+.header-left > img {
+  width: 50px;
+  cursor: pointer;
+  margin: 0 1.5rem;
+  border-radius: 50%;
+}
+.header-left h1 {
+  cursor: pointer;
+  transition: transform(0.3s);
+  transition-duration: 500ms;
+  color: #000;
+}
+.header-left h1:hover {
+  transform: scale(0.9);
+}
+.header-right {
+  margin: 0.75rem;
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+.header-right p {
+  font-size: 25px;
+}
+.header-right a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  height: 20px;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  text-align: center;
+  font-size: 23px;
+}
+.header-right a:hover {
+  border: 2px solid #000;
+}
+.right-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.signup-login {
+  display: flex;
+}
+.signup-login-grid {
+  display: grid;
+  position: absolute;
+  top: 5rem;
+  right: 2rem;
+  background: #fff;
+  border-radius: 10px;
+}
+.signup-login-grid a {
+  margin: 0;
+  padding: 0.75rem 1rem;
+}
+.show-signup,
+.show-login {
+  display: block;
+}
+.hide-signup,
+.hide-login {
+  display: none;
+}
+/* .header-ham {
+  display: none;
+} */
+/**END OF MAIN **/
+
+/**HIDDEN**/
+.signup {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 6rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  transition: 0.3s;
+  transition-duration: 500ms;
+  opacity: 0;
+  visibility: hidden;
+  overflow-x: hidden;
+}
+
+.signup-wrapper {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  width: 35%;
+  box-shadow: 0px 0px 20px 3.5px #000;
+}
+
+.signup .signup-wrapper .signup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.signup .signup-wrapper .signup-header {
+  font-size: 15px;
+}
+.signup .signup-wrapper .signup-header :first-child {
+  width: 200px;
+}
+.signup .signup-wrapper .signup-header :nth-child(3) {
+  width: 200px;
+  text-align: end;
+  font-size: 25px;
+}
+.signup .signup-wrapper .signup-header :nth-child(3) i {
+  cursor: pointer;
+}
+.signup .signup-wrapper .signup-header :nth-child(3) i:hover {
+  color: #524e4e;
+}
+/* .signup .signup-form form {
+  width: 80%;
+} */
+.signup .signup-form {
+  display: flex;
+  justify-content: center;
+  margin: 0.25rem;
+}
+.signup .signup-form form {
+  width: 85%;
+}
+.signup .signup-form form .input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  height: 30px;
+  align-items: center;
+}
+
+.signup .signup-form form .input input {
+  width: 45%;
+  outline: none;
+  text-align: center;
+  font-weight: 600;
+}
+.signup .signup-form form .checkbox {
+  margin: 0 0.75rem 0 0;
+}
+
+.signup .signup-form form span {
+  font-size: 13px;
+}
+.signup .signup-form form h1,
+.signup .signup-form form h2 {
+  font-size: 15px;
+  margin: 0.25rem;
+  color: red;
+}
+.signup .signup-form form .form-btn {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.signup .signup-form form .form-btn button {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #6e6e37d0;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  background: none;
+}
+.signup .signup-form form .form-btn button:hover {
+  background: var(--bg);
+}
+
+.signup-active {
+  opacity: 1;
+  visibility: visible;
+}
+/***LOGIN **/
+.login {
+  width: 100%;
+  overflow-x: hidden;
+}
+.login .forgot-btn {
+  font-size: 12px;
+  color: blue;
+  margin: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/**** FORGOT PASSWORD**/
+
+.forgot-pass {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 6rem;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  transition: 0.3s;
+  transition-duration: 500ms;
+  opacity: 0;
+  visibility: hidden;
+}
+.forgot-pass-wrapper {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  width: 30%;
+  box-shadow: 0px 0px 20px 3.5px #000;
+}
+
+.forgot-pass .forgot-pass-wrapper .forgot-pass-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.forgot-pass .forgot-pass-wrapper .forgot-pass-header :first-child {
+  width: 200px;
+}
+.forgot-pass .forgot-pass-wrapper .forgot-pass-header :nth-child(3) {
+  width: 200px;
+  text-align: end;
+  font-size: 25px;
+}
+.forgot-pass .forgot-pass-wrapper .forgot-pass-header :nth-child(3) i {
+  cursor: pointer;
+}
+
+.forgot-pass .forgot-pass-form {
+  display: flex;
+  justify-content: center;
+  margin: 0.25rem;
+}
+.forgot-pass .forgot-pass-form form {
+  width: 85%;
+}
+
+.forgot-pass .forgot-pass-form form .input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  height: 30px;
+  align-items: center;
+}
+
+.forgot-pass .forgot-pass-form form .input input {
+  width: 45%;
+  outline: none;
+  text-align: center;
+  font-weight: 600;
+}
+.forgot-pass .forgot-pass-form form .forgot-submit-btn {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.forgot-pass .forgot-pass-form form .forgot-submit-btn button {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #6e6e37d0;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  background: none;
+}
+.forgot-pass .forgot-pass-form form .forgot-submit-btn button:hover {
+  background: var(--bg);
+}
+
+.forgot-active {
+  opacity: 1;
+  visibility: visible;
+}
+.forgot-pass .forgot-pass-form form p {
+  font-size: 15px;
+  margin: 0.25rem;
+  color: red;
+}
+
+/**HAM BURGER ***/
+/* .header-ham-div {
+  opacity: 0;
+  visibility: hidden;
+} */
+
+/***HEADER HAMBURGER CLICKED***/
+
+.header-signup-login-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*** RESPONSIVE FOR LAPTOPS ***/
+
+/***FOR LARGE DEVICE ****/
+@media screen and (max-width: 972px) {
+  .header-main {
+    height: 4rem;
+  }
+  .header-left {
+    margin: 0rem;
+  }
+  .header-left > img {
+    width: 40px;
+  }
+  .header-left h1 {
+    font-size: 25px;
+  }
+  .header-right {
+    margin: 0;
+    height: 100%;
+  }
+  .header-right p {
+    font-size: 23px;
+  }
+  .header-right a {
+    font-size: 20px;
+  }
+}
+/*** FOR MEDIUM DEVICES ***/
+@media screen and (max-width: 768px) {
+  .header-left > img {
+    width: 28px;
+    margin: 0 0.5rem;
+  }
+  .header-left h1 {
+    font-size: 23px;
+  }
+
+  .header-right p {
+    font-size: 20px;
+  }
+  .header-right a {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header-left h1 {
+    font-size: 20px;
+  }
+  .header-left > img {
+    width: 27px;
+    margin: 0 0.5rem;
+  }
+
+  .header-right p {
+    font-size: 18px;
+  }
+  .header-right a {
+    padding: 0.25rem 0.5rem;
+    font-size: 18px;
+    margin: 0;
+  }
+}
+
+/*** FOR SMALL DEVICES ***/
+@media screen and (max-width: 350px) {
+}

@@ -1,0 +1,195 @@
+.swiper-main {
+  /* width: 100%; */
+  /* margin-left: 150px; */
+
+  position: relative;
+  margin: 2rem 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.swiper-main h1 {
+  margin: 2rem 0 2rem 80px;
+}
+.swiper-main .swiper {
+  width: 80%;
+  height: 16rem;
+  position: unset;
+}
+.swiper-main .swiper-slide {
+  background: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  border-radius: 10px;
+  padding: 1rem;
+  justify-content: space-between;
+  transition: transform(0.3s);
+  transition-duration: 500ms;
+  border: 2px solid #fff;
+}
+.swiper-main .swiper-slide:hover {
+  background: none;
+  border: 2px solid #000;
+}
+.swiper-main .swiper-slide:hover .swiper-btn {
+  background: #000;
+  color: #fff;
+  border: 2px solid #000;
+  box-shadow: 0px 0px 15px #7d7c7c;
+}
+.swiper-main .swiper-slide:hover .card-right img {
+  transform: rotate(-5deg);
+  width: 130px;
+  height: 100%;
+}
+.swiper-main .swiper-button-prev {
+  left: 6rem;
+  color: #fff;
+  top: 60%;
+}
+.swiper-main .swiper-button-next {
+  right: 6rem;
+  color: #fff;
+  top: 60%;
+}
+.card-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.swiper-btn {
+  border: 2px solid #000;
+  background: #fff;
+  color: #000;
+  padding: 0.25rem;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 80px;
+  font-size: 20px;
+}
+.swiper-btn i {
+  font-size: 15px;
+}
+/*
+.btn:hover {
+  border: 2px solid #000;
+  background: #fff;
+  color: #000;
+} */
+.card-left .slide-name {
+  text-transform: uppercase;
+}
+.card-left .slide-author {
+  font-size: small;
+}
+.card-left .slide-detail {
+  font-weight: 100;
+}
+
+.card-left .slide-amt {
+  display: flex;
+  align-items: center;
+}
+.card-left .slide-amt .rupee {
+  font-size: 15px;
+  position: relative;
+  bottom: 0.1rem;
+  font-weight: 600;
+}
+.card-left .slide-amt .slide-price {
+  font-weight: 600;
+  font-size: 22px;
+}
+.card-left .slide-amt .slide-striked-price {
+  color: red;
+  margin: 0 0.5rem;
+  text-decoration: line-through;
+}
+/***CARD - RIGHT ***/
+
+.card-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.25rem;
+}
+
+.card-right img {
+  border-radius: 10px;
+  height: 95%;
+  width: 120px;
+  box-shadow: 0px 0px 15px #7d7c7c;
+}
+
+/****Added to Cart ***/
+.clicked {
+  background: #000;
+}
+
+/*** RESPONSIVE FOR LAPTOPS ***/
+
+/***FOR LARGE DEVICE ****/
+@media screen and (max-width: 972px) {
+  .swiper-main {
+    width: 100%;
+  }
+  .swiper-main h1 {
+    margin: 1rem 0;
+    font-size: 28px;
+  }
+  .swiper-main .swiper {
+    width: 100%;
+  }
+  .swiper-main .swiper-button-prev {
+    left: 0rem;
+  }
+  .swiper-main .swiper-button-next {
+    right: 0rem;
+  }
+}
+/*** FOR MEDIUM DEVICES ***/
+@media screen and (max-width: 768px) {
+  .swiper-main h1 {
+    margin: 1rem 0;
+    font-size: 23px;
+  }
+  /* .card-left {
+    width: 40%;
+  }
+  .card-right {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+  } */
+  .card-left .slide-name {
+    font-size: 15px;
+  }
+  .card-left .slide-author {
+    font-size: 12px;
+  }
+  .card-left .slide-detail {
+    font-size: 11px;
+  }
+  .card-left .slide-amt .slide-price {
+    font-size: 20px;
+  }
+  .card-left .slide-amt .slide-striked-price {
+    font-size: 15px;
+  }
+  .card-right img {
+    width: 110px;
+  }
+  .swiper-main .swiper-slide:hover .card-right img {
+    transform: rotate(-5deg);
+    width: 120px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/*** FOR SMALL DEVICES ***/
+@media screen and (max-width: 350px) {
+}

@@ -1,0 +1,164 @@
+.left-nav-main {
+  width: 150px;
+  position: fixed;
+  margin: 5rem 0 0 0;
+  border-right: 2px solid #000;
+}
+.left-nav-wrapper {
+  margin: 4rem 0;
+}
+.left-nav-wrapper .navs {
+  display: grid;
+  justify-content: center;
+}
+.left-nav-wrapper .navs .nav-child {
+  width: 150px;
+  display: grid;
+  text-align: center;
+  padding: 2rem 0;
+  cursor: pointer;
+}
+.left-nav-wrapper .navs .nav-child:hover {
+  background: #000;
+  color: #fff;
+}
+.left-nav-wrapper .navs .nav-child:hover span {
+  color: #fff;
+}
+.left-nav-wrapper .navs .nav-child i {
+  font-size: 38px;
+  cursor: pointer;
+}
+.left-nav-wrapper .navs .nav-child span {
+  text-decoration: none;
+  color: #000;
+  margin: 0.75rem;
+}
+
+/****BG BLACKS ***/
+.home-bg-black {
+  background: #000;
+  color: #fff;
+}
+
+.left-nav-wrapper .navs .home-bg-black span {
+  color: #fff;
+}
+.gallery-bg-black,
+.my-cart-bg-black,
+.reach-us-bg-black {
+  background: #000;
+  color: #fff;
+}
+.left-nav-wrapper .navs .gallery-bg-black span {
+  color: #fff;
+}
+.left-nav-wrapper .navs .my-cart-bg-black span {
+  color: #fff;
+}
+.left-nav-wrapper .navs .reach-us-bg-black span {
+  color: #fff;
+}
+
+/*** RESPONSIVE FOR LAPTOPS ***/
+/***FOR LARGE DEVICE ****/
+@media screen and (max-width: 972px) {
+  .left-nav-main {
+    width: 100%;
+
+    margin-top: 4rem;
+    background: linear-gradient(
+        90deg,
+        hsla(298, 68%, 90%, 1) 0%,
+        hsla(30, 82%, 91%, 1) 100%
+      ),
+      no-repeat;
+    z-index: 99;
+  }
+  .left-nav-wrapper {
+    margin: 0;
+  }
+  .left-nav-wrapper .navs {
+    display: flex;
+    height: 6rem;
+  }
+  .left-nav-wrapper .navs .nav-child {
+    width: 20%;
+    padding: 1rem 0;
+  }
+  .left-nav-wrapper .navs .nav-child i {
+    font-size: 25px;
+  }
+  .left-nav-wrapper .navs .nav-child span {
+    margin: 0.25rem;
+  }
+  .signup .signup-wrapper {
+    width: 45%;
+  }
+  .signup .signup-wrapper .signup-header h2 {
+    font-size: 15px;
+  }
+  .signup .signup-wrapper .signup-header img {
+    width: 45px;
+  }
+
+  .signup .signup-form form .input {
+    display: grid;
+    height: 15px;
+    justify-content: center;
+    margin: 0.5rem 0;
+  }
+  .signup .signup-form form .input input {
+    width: 100%;
+  }
+  .forgot-pass-wrapper {
+    width: 50%;
+  }
+}
+/*** FOR MEDIUM DEVICES ***/
+@media screen and (max-width: 768px) {
+  .left-nav-main {
+    margin: 4rem 0 0 0;
+  }
+  .left-nav-wrapper .navs {
+    height: 5rem;
+  }
+  .left-nav-wrapper .navs .nav-child {
+    padding: 0.5rem 0;
+  }
+  .left-nav-wrapper .navs .nav-child i {
+    font-size: 23px;
+  }
+  .left-nav-wrapper .navs .nav-child span {
+    margin: 0.25rem;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .left-nav-wrapper .navs {
+    height: 4rem;
+  }
+  .left-nav-wrapper .navs .nav-child {
+    padding: 0.5rem 0;
+  }
+  .left-nav-wrapper .navs .nav-child i {
+    font-size: 20px;
+  }
+  .left-nav-wrapper .navs .nav-child span {
+    font-size: 14px;
+  }
+  /***HIDDEN**/
+  .signup .signup-wrapper {
+    width: 75%;
+    margin: 0;
+    padding: 1rem;
+  }
+  .signup .signup-form form {
+    width: 100%;
+  }
+}
+
+/*** FOR SMALL DEVICES ***/
+@media screen and (max-width: 350px) {
+}

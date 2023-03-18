@@ -1,0 +1,81 @@
+.foot-main {
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.foot-main .foot-wrapper {
+  width: 90%;
+  height: 25rem;
+  background: #8f8d8d4e;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: 2px solid #000;
+  display: grid;
+}
+.foot-top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.foot-top .foot-name {
+  text-align: center;
+}
+.foot-top .foot-name h4 {
+  font-size: 20px;
+}
+.foot-top .foot-name h5 {
+  font-size: 12px;
+  font-weight: 100;
+  font-style: italic;
+}
+.foot-main .foot-mid {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0;
+  align-items: center;
+}
+
+.foot-mid .foot-mid-child {
+  text-align: center;
+}
+.foot-mid .foot-mid-child ul {
+  list-style: none;
+  text-align: left;
+  margin: 1rem 0;
+  padding: 0;
+}
+.foot-mid .foot-mid-child ul li {
+  margin: 0.25rem 0;
+  cursor: pointer;
+}
+.foot-bottom {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.foot-bottom h2 {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+/***FOR LARGE DEVICE ****/
+@media screen and (max-width: 972px) {
+  .foot-main .foot-wrapper {
+    width: 100%;
+  }
+}
+/*** FOR MEDIUM DEVICES ***/
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/*** FOR SMALL DEVICES ***/
+@media screen and (max-width: 350px) {
+}

@@ -1,0 +1,39 @@
+.gall-home-wrapper img {
+  width: 100%;
+  height: 40rem;
+  cursor: pointer;
+}
+.gall-home-wrapper h1 {
+  text-align: center;
+}
+.gall-home-wrapper .swiper-button-prev {
+  bottom: 0;
+}
+
+/*** RESPONSIVE FOR LAPTOPS ***/
+
+/***FOR LARGE DEVICE ****/
+@media screen and (max-width: 972px) {
+  .gall-home-wrapper {
+    margin: 1.5rem 0;
+  }
+  .gall-home-wrapper img {
+    height: 30rem;
+  }
+}
+/*** FOR MEDIUM DEVICES ***/
+@media screen and (max-width: 768px) {
+  .gall-home-wrapper img {
+    height: 27rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .gall-home-wrapper img {
+    height: 22rem;
+  }
+}
+
+/*** FOR SMALL DEVICES ***/
+@media screen and (max-width: 350px) {
+}
